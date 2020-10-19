@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# Transaction.destroy_all
-# InvoiceItem.destroy_all
+
+Transaction.destroy_all
+InvoiceItem.destroy_all
 Invoice.destroy_all
 Item.destroy_all
 Merchant.destroy_all
@@ -30,14 +31,21 @@ require "csv"
   CSV.foreach(Rails.root.join('db/data/invoices.csv'), headers: true) do |row|
     Invoice.create(row.to_h)
   end
-  # NEED HELP ON THIS ^^^^
-  # CSV.foreach(Rails.root.join('db/data/invoice_items.csv'), headers: true) do |row|
-  #   row[:unit_price] = row[:unit_price] / 100.0
-  #   InvoiceItem.create(row)
-  # end
-  #
-  # CSV.foreach(Rails.root.join('db/data/transactions.csv'), headers: true) do |row|
-  #   Transaction.create(row)
-  # end
+
+  CSV.foreach(Rails.root.join('db/data/invoice_items.csv'), headers: true) do |row|
+    row["unit_price"] = (row["unit_price"].to_f / 100).round(2)
+    InvoiceItem.create(row.to_h)
+  end
+
+  CSV.foreach(Rails.root.join('db/data/transactions.csv'), headers: true) do |row|
+    Transaction.create(row.to_h)
+  end
+
+  ActiveRecord::Base.connection.reset_pk_sequence!('customers')
+  ActiveRecord::Base.connection.reset_pk_sequence!('merchants')
+  ActiveRecord::Base.connection.reset_pk_sequence!('items')
+  ActiveRecord::Base.connection.reset_pk_sequence!('invoices')
+  ActiveRecord::Base.connection.reset_pk_sequence!('invoice_items')
+  ActiveRecord::Base.connection.reset_pk_sequence!('transactions')
 
   # reset primary key sequence postgres for all

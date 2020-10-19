@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 describe Customer do
-  describe 'relationships' do
-
-  end
+  # describe 'relationships' do
+  #
+  # end
 
   describe 'validations' do
     it { should validate_presence_of :first_name }
