@@ -1,11 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/models/merchant.rb": {
+      "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/models/item.rb": {
         "lines": [
           1,
           1,
+          1,
+          1,
           null,
+          1,
           1,
           1,
           1,
@@ -19,33 +22,24 @@
           null
         ]
       },
-      "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/controllers/api/v1/merchants_controller.rb": {
+      "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/models/merchant.rb": {
         "lines": [
           1,
           1,
-          1,
-          null,
           null,
           1,
           1,
-          null,
-          null,
           1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
+          null
+        ]
+      },
+      "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/controllers/api/v1/items/merchants_controller.rb": {
+        "lines": [
           1,
           null,
           1,
-          2,
+          1,
+          1,
           null,
           null
         ]
@@ -65,6 +59,6 @@
         ]
       }
     },
-    "timestamp": 1603234812
+    "timestamp": 1603236250
   }
 }
