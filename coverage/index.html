@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-20T16:28:00-06:00">2020-10-20T16:28:00-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-20T17:00:12-06:00">2020-10-20T17:00:12-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.03
+         1.04
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>5</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>33</b> relevant lines,
-    <span class="green"><b>33</b> lines covered</span> and
+    <b>25</b> relevant lines,
+    <span class="green"><b>25</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -71,9 +71,9 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#44e1fa8b40be6c0859fa43120c0787841040e284" class="src_link" title="app/controllers/api/v1/items_controller.rb">app/controllers/api/v1/items_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#dcbf362e3051f20781b9b4c9a3d747c8797aa412" class="src_link" title="app/controllers/api/v1/merchants_controller.rb">app/controllers/api/v1/merchants_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">32</td>
+            <td class="cell--number">27</td>
             <td class="cell--number">14</td>
             <td class="cell--number">14</td>
             <td class="cell--number">0</td>
@@ -104,17 +104,6 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c219985ba6f492c7e29f1a044a552d6cafb52e30" class="src_link" title="app/models/item.rb">app/models/item.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
             <td class="strong t-file__name"><a href="#db97866ea0831b27d867e88d83a3911908fd8ca2" class="src_link" title="app/models/merchant.rb">app/models/merchant.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">7</td>
@@ -126,7 +115,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c5d41cd1621cd918421852f4213a4a0be2c0a459" class="src_link" title="app/serializers/item_serializer.rb">app/serializers/item_serializer.rb</a></td>
+            <td class="strong t-file__name"><a href="#c3c1bf791c3c82e1829478085d1c2260832dfb7a" class="src_link" title="app/serializers/merchant_serializer.rb">app/serializers/merchant_serializer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">4</td>
             <td class="cell--number">3</td>
@@ -153,9 +142,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="44e1fa8b40be6c0859fa43120c0787841040e284">
+        <div class="source_table" id="dcbf362e3051f20781b9b4c9a3d747c8797aa412">
   <div class="header">
-    <h3>app/controllers/api/v1/items_controller.rb</h3>
+    <h3>app/controllers/api/v1/merchants_controller.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -186,7 +175,7 @@
 
             
 
-            <code class="ruby">class Api::V1::ItemsController &lt; ApplicationController</code>
+            <code class="ruby">class Api::V1::MerchantsController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -208,7 +197,7 @@
 
             
 
-            <code class="ruby">    render json: ItemSerializer.new(Item.all)</code>
+            <code class="ruby">    render json: MerchantSerializer.new(Merchant.all)</code>
           </li>
         </div>
       
@@ -252,7 +241,7 @@
 
             
 
-            <code class="ruby">    render json: ItemSerializer.new(Item.find(params[:id]))</code>
+            <code class="ruby">    render json: MerchantSerializer.new(Merchant.find(params[:id]))</code>
           </li>
         </div>
       
@@ -296,7 +285,7 @@
 
             
 
-            <code class="ruby">    render json: ItemSerializer.new(Item.create(item_params))</code>
+            <code class="ruby">    render json: MerchantSerializer.new(Merchant.create(merchant_params))</code>
           </li>
         </div>
       
@@ -340,7 +329,7 @@
 
             
 
-            <code class="ruby">    render json: ItemSerializer.new(Item.update(params[:id], item_params))</code>
+            <code class="ruby">    render json: MerchantSerializer.new(Merchant.update(params[:id], merchant_params))</code>
           </li>
         </div>
       
@@ -384,7 +373,7 @@
 
             
 
-            <code class="ruby">    Item.delete(params[:id])</code>
+            <code class="ruby">    Merchant.delete(params[:id])</code>
           </li>
         </div>
       
@@ -439,7 +428,7 @@
 
             
 
-            <code class="ruby">  def item_params</code>
+            <code class="ruby">  def merchant_params</code>
           </li>
         </div>
       
@@ -450,7 +439,7 @@
 
             
 
-            <code class="ruby">    params.permit(</code>
+            <code class="ruby">    params.permit(:name)</code>
           </li>
         </div>
       
@@ -461,67 +450,12 @@
 
             
 
-            <code class="ruby">                  :name,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="27">
-            
-            
-
-            
-
-            <code class="ruby">                  :description,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
-            
-
-            <code class="ruby">                  :unit_price,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">                  :merchant_id</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
-            
-
-            <code class="ruby">                )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="never" data-hits="" data-linenumber="27">
             
             
 
@@ -653,147 +587,6 @@
 </div>
 
       
-        <div class="source_table" id="c219985ba6f492c7e29f1a044a552d6cafb52e30">
-  <div class="header">
-    <h3>app/models/item.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>8</b> relevant lines.
-      <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class Item &lt; ApplicationRecord</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  validates :name, presence: true, length: { allow_blank: false }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  validates :description, presence: true, length: { allow_blank: false }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  validates :unit_price, presence: true, numericality: { only_integer: false, greater_than: 0 }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  belongs_to :merchant</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  has_many :invoice_items</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  has_many :invoices, through: :invoice_items</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  has_many :transactions, through: :invoices</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="db97866ea0831b27d867e88d83a3911908fd8ca2">
   <div class="header">
     <h3>app/models/merchant.rb</h3>
@@ -902,9 +695,9 @@
 </div>
 
       
-        <div class="source_table" id="c5d41cd1621cd918421852f4213a4a0be2c0a459">
+        <div class="source_table" id="c3c1bf791c3c82e1829478085d1c2260832dfb7a">
   <div class="header">
-    <h3>app/serializers/item_serializer.rb</h3>
+    <h3>app/serializers/merchant_serializer.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -935,7 +728,7 @@
 
             
 
-            <code class="ruby">class ItemSerializer</code>
+            <code class="ruby">class MerchantSerializer</code>
           </li>
         </div>
       
@@ -957,7 +750,7 @@
 
             
 
-            <code class="ruby">  attributes :name, :description, :unit_price, :merchant_id</code>
+            <code class="ruby">  attributes :name</code>
           </li>
         </div>
       
