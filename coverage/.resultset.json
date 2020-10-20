@@ -56,12 +56,9 @@
           1,
           2,
           2,
-          2,
           null,
           null,
           1,
-          2,
-          2,
           2,
           null,
           null
@@ -69,7 +66,6 @@
       },
       "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/models/invoice.rb": {
         "lines": [
-          1,
           1,
           1,
           null,
@@ -93,8 +89,6 @@
           2,
           2,
           2,
-          2,
-          null,
           null,
           null
         ]
@@ -120,7 +114,7 @@
           1,
           2,
           2,
-          null,
+          2,
           null,
           null,
           1,
@@ -136,6 +130,7 @@
           null,
           1,
           1,
+          1,
           null
         ]
       },
@@ -146,14 +141,11 @@
           1,
           1,
           2,
-          2,
-          2,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          null,
+          null,
           2,
           null,
           null
@@ -162,7 +154,7 @@
       "/Users/danischoolcomputer/turing/Mod3/projects/rails_engine/app/models/transaction.rb": {
         "lines": [
           1,
-          1,
+          null,
           1,
           null,
           1,
@@ -170,6 +162,6 @@
         ]
       }
     },
-    "timestamp": 1603148824
+    "timestamp": 1603153140
   }
 }

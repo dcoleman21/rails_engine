@@ -2,8 +2,8 @@ require 'rails_helper'
 
 describe InvoiceItem do
   describe 'relationships' do
-    it { should have_many :items }
-    it { should have_many(:items).through(:invoice_items)}
+    it { should belong_to :item }
+    it { should belong_to :invoice }
   end
 
   describe 'validations' do
