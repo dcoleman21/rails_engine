@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Item search" do
+describe "Item Search Endpoints" do
   it "can find a list of items that contain a fragment, case insensitive" do
     create(:item, name: "Basketball")
     create(:item, name: "Baseball")
