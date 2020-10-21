@@ -8,4 +8,9 @@ class Api::V1::Merchants::SearchController < ApplicationController
     merchant = Merchant.where("lower(name) LIKE ?", "%" + params[:name].downcase + "%").first
     render json: MerchantSerializer.new(merchant)
   end
+
+  def most_revenue
+    merchants = Merchant.most_revenue(params[:quantity])
+    render json: MerchantSerializer.new(merchants)
+  end
 end
