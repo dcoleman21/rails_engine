@@ -85,5 +85,50 @@ RSpec.describe 'Business Intelligence Endpoints' do
       expect(merchants[3][:attributes][:name]).to eq(@m2.name)
       expect(merchants[4][:attributes][:name]).to eq(@m1.name)
     end
+
+    it "can get revenue between two dates" do
+      # require "pry"; binding.pry
+      get "/api/v1/revenue?start=2020-01-01&end=2020-04-04"
+
+      expect(response).to be_successful
+
+      data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(data).to be_a(Hash)
+      expect(data).to have_key(:data)
+
+      expect(data[:data]).to be_a(Hash)
+      expect(data[:data]).to have_key(:attributes)
+
+      expect(data[:data][:attributes]).to be_a(Hash)
+      expect(data[:data][:attributes]).to have_key(:revenue)
+
+      expect(data[:data][:attributes][:revenue]).to eq(500)
+    end
+
+    it "can get total revenue for a single merchant" do
+      get "/api/v1/merchants/#{@m4.id}/revenue"
+
+      expect(response).to be_successful
+
+      data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(data).to be_a(Hash)
+      expect(data).to have_key(:data)
+
+      expect(data[:data]).to be_a(Hash)
+      expect(data[:data]).to have_key(:id)
+
+      expect(data[:data][:id]).to eq(@m4.id)
+
+      expect(data[:data]).to be_a(Hash)
+      expect(data[:data]).to have_key(:attributes)
+
+      expect(data[:data][:attributes]).to be_a(Hash)
+      expect(data[:data][:attributes]).to have_key(:revenue)
+
+      expect(data[:data][:attributes][:revenue]).to eq(500)
+
+    end
   end
 end
