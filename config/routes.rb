@@ -12,6 +12,7 @@ Rails.application.routes.draw do
         get '/find', to: 'search#show'
         get '/:id/items', to: 'items#index'
         get '/most_revenue', to: 'business_intel#most_revenue'
+        get '/most_items', to: 'business_intel#most_items'
       end
 
       resources :items

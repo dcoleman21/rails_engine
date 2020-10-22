@@ -7,4 +7,13 @@ class MerchantFacade
       .order("most_revenue DESC")
       .limit(quantity)
   end
+
+  def self.most_items_sold(quantity)
+    Merchant.joins(invoices: [:transactions, :invoice_items])
+      .select("merchants.*, sum(quantity) as most_items_sold")
+      .where("invoices.status='shipped' AND transactions.result='success'")
+      .group("merchants.id")
+      .order("most_items_sold DESC")
+      .limit(quantity)
+  end
 end
