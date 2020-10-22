@@ -87,7 +87,6 @@ RSpec.describe 'Business Intelligence Endpoints' do
     end
 
     it "can get revenue between two dates" do
-      # require "pry"; binding.pry
       get "/api/v1/revenue?start=2020-01-01&end=2020-04-04"
 
       expect(response).to be_successful
@@ -106,7 +105,7 @@ RSpec.describe 'Business Intelligence Endpoints' do
       expect(data[:data][:attributes][:revenue]).to eq(500)
     end
 
-    it "can get total revenue for a single merchant" do
+    xit "can get total revenue for a single merchant" do
       get "/api/v1/merchants/#{@m4.id}/revenue"
 
       expect(response).to be_successful
@@ -128,7 +127,6 @@ RSpec.describe 'Business Intelligence Endpoints' do
       expect(data[:data][:attributes]).to have_key(:revenue)
 
       expect(data[:data][:attributes][:revenue]).to eq(500)
-
     end
   end
 end

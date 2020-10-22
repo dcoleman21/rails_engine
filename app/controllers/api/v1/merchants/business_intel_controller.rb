@@ -9,8 +9,8 @@ class Api::V1::Merchants::BusinessIntelController < ApplicationController
     render json: MerchantSerializer.new(merchants).serialized_json
   end
 
-  def merchant_revenue
-    merchant = MerchantFacade.revenue(params[:id])
-    render json: RevenueSerializer.new(merchant).serialized_json
-  end
+  # def merchant_revenue
+  #   merchant = MerchantFacade.revenue(params[:id])
+  #   render json: RevenueSerializer.new(merchant).serialized_json
+  # end
 end

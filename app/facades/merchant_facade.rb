@@ -16,4 +16,11 @@ class MerchantFacade
       .order("most_items_sold DESC")
       .limit(quantity)
   end
+
+  # def self.revenue(_id)
+  #   Merchant.joins(:transactions, :invoice_items)
+  #   .select("sum(invoice_items.quantity * invoice_items.unit_price) as total")
+  #   .where("invoices.status='shipped' AND transactions.result='success'")
+  #   # .sum("('invoice_items.quantity * invoice_items.unit_price') as total")
+  # end
 end
