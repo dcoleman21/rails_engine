@@ -32,7 +32,6 @@ describe "Merchants API" do
 
     merchants.each do |merchant|
       expect(merchant).to have_key(:id)
-      # require "pry"; binding.pry
       expect(merchant[:id]).to be_an(String)
 
       expect(merchant).to have_key(:type)

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-22T17:37:17-06:00">2020-10-22T17:37:17-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-23T09:26:36-06:00">2020-10-23T09:26:36-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -392,7 +392,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1604fbadc4cf0ed0314fef9b7a66f278b2310e57" class="src_link" title="spec/requests/api/v1/merchants/business_spec.rb">spec/requests/api/v1/merchants/business_spec.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">85.56 %</td>
-            <td class="cell--number">134</td>
+            <td class="cell--number">132</td>
             <td class="cell--number">90</td>
             <td class="cell--number">77</td>
             <td class="cell--number">13</td>
@@ -7470,18 +7470,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="90">
-            
-            
-
-            
-
-            <code class="ruby">      # require &quot;pry&quot;; binding.pry</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="91">
+          <li class="covered" data-hits="1" data-linenumber="90">
             <span class="hits">1</span>
             
 
@@ -7492,7 +7481,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="92">
+          <li class="never" data-hits="" data-linenumber="91">
             
             
 
@@ -7503,7 +7492,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="93">
+          <li class="covered" data-hits="1" data-linenumber="92">
             <span class="hits">1</span>
             
 
@@ -7514,7 +7503,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="94">
+          <li class="never" data-hits="" data-linenumber="93">
             
             
 
@@ -7525,7 +7514,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="95">
+          <li class="covered" data-hits="1" data-linenumber="94">
             <span class="hits">1</span>
             
 
@@ -7536,13 +7525,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="96">
+          <li class="never" data-hits="" data-linenumber="95">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="96">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(data).to be_a(Hash)</code>
           </li>
         </div>
       
@@ -7553,29 +7553,29 @@
 
             
 
-            <code class="ruby">      expect(data).to be_a(Hash)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="98">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(data).to have_key(:data)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="99">
+          <li class="never" data-hits="" data-linenumber="98">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="99">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(data[:data]).to be_a(Hash)</code>
           </li>
         </div>
       
@@ -7586,29 +7586,29 @@
 
             
 
-            <code class="ruby">      expect(data[:data]).to be_a(Hash)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="101">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(data[:data]).to have_key(:attributes)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="102">
+          <li class="never" data-hits="" data-linenumber="101">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="102">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(data[:data][:attributes]).to be_a(Hash)</code>
           </li>
         </div>
       
@@ -7619,23 +7619,12 @@
 
             
 
-            <code class="ruby">      expect(data[:data][:attributes]).to be_a(Hash)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="104">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(data[:data][:attributes]).to have_key(:revenue)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="105">
+          <li class="never" data-hits="" data-linenumber="104">
             
             
 
@@ -7646,13 +7635,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="106">
+          <li class="covered" data-hits="1" data-linenumber="105">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">      expect(data[:data][:attributes][:revenue]).to eq(500)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="106">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -7663,23 +7663,12 @@
 
             
 
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="108">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="109">
+          <li class="covered" data-hits="1" data-linenumber="108">
             <span class="hits">1</span>
             
 
@@ -7690,7 +7679,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="110">
+          <li class="missed" data-hits="0" data-linenumber="109">
             
             
 
@@ -7701,7 +7690,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="111">
+          <li class="never" data-hits="" data-linenumber="110">
             
             
 
@@ -7712,7 +7701,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="112">
+          <li class="missed" data-hits="0" data-linenumber="111">
             
             
 
@@ -7723,7 +7712,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="113">
+          <li class="never" data-hits="" data-linenumber="112">
             
             
 
@@ -7734,7 +7723,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="114">
+          <li class="missed" data-hits="0" data-linenumber="113">
             
             
 
@@ -7745,7 +7734,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="115">
+          <li class="never" data-hits="" data-linenumber="114">
             
             
 
@@ -7756,7 +7745,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="116">
+          <li class="missed" data-hits="0" data-linenumber="115">
             
             
 
@@ -7767,7 +7756,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="117">
+          <li class="missed" data-hits="0" data-linenumber="116">
             
             
 
@@ -7778,13 +7767,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="118">
+          <li class="never" data-hits="" data-linenumber="117">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="118">
+            
+            
+
+            
+
+            <code class="ruby">      expect(data[:data]).to be_a(Hash)</code>
           </li>
         </div>
       
@@ -7795,23 +7795,12 @@
 
             
 
-            <code class="ruby">      expect(data[:data]).to be_a(Hash)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="120">
-            
-            
-
-            
-
             <code class="ruby">      expect(data[:data]).to have_key(:id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="121">
+          <li class="never" data-hits="" data-linenumber="120">
             
             
 
@@ -7822,7 +7811,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="122">
+          <li class="missed" data-hits="0" data-linenumber="121">
             
             
 
@@ -7833,7 +7822,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="123">
+          <li class="never" data-hits="" data-linenumber="122">
             
             
 
@@ -7844,7 +7833,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="124">
+          <li class="missed" data-hits="0" data-linenumber="123">
             
             
 
@@ -7855,7 +7844,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="125">
+          <li class="missed" data-hits="0" data-linenumber="124">
             
             
 
@@ -7866,7 +7855,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="126">
+          <li class="never" data-hits="" data-linenumber="125">
             
             
 
@@ -7877,7 +7866,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="127">
+          <li class="missed" data-hits="0" data-linenumber="126">
             
             
 
@@ -7888,7 +7877,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="128">
+          <li class="missed" data-hits="0" data-linenumber="127">
             
             
 
@@ -7899,7 +7888,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="129">
+          <li class="never" data-hits="" data-linenumber="128">
             
             
 
@@ -7910,7 +7899,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="130">
+          <li class="missed" data-hits="0" data-linenumber="129">
             
             
 
@@ -7921,18 +7910,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="131">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="132">
+          <li class="never" data-hits="" data-linenumber="130">
             
             
 
@@ -7943,7 +7921,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="133">
+          <li class="never" data-hits="" data-linenumber="131">
             
             
 
@@ -7954,7 +7932,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="134">
+          <li class="never" data-hits="" data-linenumber="132">
             
             
 
