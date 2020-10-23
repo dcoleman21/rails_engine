@@ -8,6 +8,7 @@ This is an E-Commerce Application that communicates via APIs. This application e
   - [Getting Started](#getting-started)
   - [Set Up](#set-up)
   - [Runing the tests](#running-the-tests)
+  - [Schema](#schema)
   - [Authors](#authors)
 
 ## Getting Started
@@ -224,6 +225,10 @@ Make sure that your tests pass both the `harness_spec` and your local test.
    - Items
    - Merchants
    - Transactions
+
+### Schema
+
+![Schema](https://app.lucidchart.com/publicSegments/view/a967f0a2-86fe-4bf7-b5ad-3ed056ec7e71/image.jpeg)
 
 ### Break down into end to end tests
 
