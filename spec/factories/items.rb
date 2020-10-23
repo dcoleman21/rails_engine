@@ -1,8 +1,10 @@
+require 'faker'
+
 FactoryBot.define do
   factory :item do
-    merchant  
     name        { Faker::Space.star }
-    description { Faker::Lorem.sentence }
-    unit_price  { Faker::Commerce.price }
+    description { Faker::Hipster.paragraph(sentence_count: 2) }
+    unit_price  { Faker::Number.decimal(l_digits: 2) }
+    merchant
   end
 end
