@@ -228,7 +228,7 @@ Make sure that your tests pass both the `harness_spec` and your local test.
 
 ### Schema
 
-![Schema](https://app.lucidchart.com/publicSegments/view/a967f0a2-86fe-4bf7-b5ad-3ed056ec7e71/image.jpeg)
+Coming Soon
 
 ### Break down into end to end tests
 
